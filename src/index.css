@@ -1,0 +1,20 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* Agni Shiksha Brand Theme: Orange & White */
+@theme {
+  --color-primary: #ea580c; /* Orange 600 - Main brand color */
+  --color-primary-hover: #c2410c; /* Orange 700 - For button hovers */
+  --color-primary-light: #ffedd5; /* Orange 100 - For subtle active states */
+  --color-background: #ffffff; /* Pure white background */
+  --color-surface: #fafaf9; /* Off-white for secondary backgrounds like sidebars/cards */
+  --color-text-main: #1c1917; /* Stone 900 for high readability on white */
+}
+
+/* Base styles for the Agni theme */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+  }
+}
