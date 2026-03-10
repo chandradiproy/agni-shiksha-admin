@@ -1,3 +1,4 @@
+// src/features/auth/components/LoginForm.tsx
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -14,7 +15,9 @@ const emailSchema = z.object({
 });
 
 const loginSchema = z.object({
-  otp: z.string().min(4, { message: "Please enter the valid OTP sent to your email." }),
+  otp: z.string()
+    .length(6, { message: "OTP must be exactly 6 digits." })
+    .regex(/^\d+$/, { message: "OTP must contain only numbers." }),
   password: z.string().min(6, { message: "Password must be at least 6 characters." }),
 });
 
@@ -70,17 +73,14 @@ export const LoginForm: React.FC = () => {
     try {
       const response = await authService.login(verifiedEmail, data.otp, data.password);
       
-      // FIX: response is already the data payload from the service layer
       const { admin, token } = response;
       
       login({ id: admin.id, name: admin.name, email: admin.email, role: admin.role }, token);
       addToast(`Welcome back, ${admin.name || admin.email}!`, "success");
       
-      // Use React Router for SPA navigation instead of window.location.href
       navigate('/');
       
     } catch (error: any) {
-      // Catch network errors AND JS TypeError if payload is malformed
       const message = error.response?.data?.error || error.response?.data?.message || "Invalid OTP or Password.";
       addToast(message, "error");
     }
@@ -161,8 +161,14 @@ export const LoginForm: React.FC = () => {
               <input
                 {...registerLogin('otp')}
                 type="text"
+                maxLength={6}
+                inputMode="numeric"
                 autoComplete="one-time-code"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-center tracking-[0.25em] font-mono text-lg"
+                onInput={(e) => {
+                  // Ensure only numerical characters are typed
+                  e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, '');
+                }}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-center tracking-[0.5em] font-mono text-xl font-bold text-primary"
                 placeholder="000000"
               />
               {loginErrors.otp && <p className="text-red-500 text-xs mt-1 text-left">{loginErrors.otp.message}</p>}

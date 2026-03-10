@@ -1,1 +1,2 @@
-// dashboard feature entry
+// src/features/dashboard/index.ts
+export { Dashboard } from './components/Dashboard';

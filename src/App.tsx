@@ -8,6 +8,8 @@ import { ContentPage } from './features/content';
 import { TestSeriesPage } from './features/content/components/TestSeriesPage';
 import { NewsPage } from './features/news'; // <--- Import NewsPage
 import { StudyPage } from './features/study'; // <--- Import StudyPage
+import { ModerationDashboard } from './features/moderation/components/ModerationDashboard';
+import { GamificationPage } from './features/gamification';
 import { AdminLayout } from './components/layout/AdminLayout';
 import { ToastContainer } from './components/ui/ToastContainer';
 import { useAuthStore } from './store/authStore';
@@ -53,8 +55,8 @@ const App: React.FC = () => {
             <Route path="news" element={<NewsPage />} />
             
             {/* Placeholders for future modules */}
-            <Route path="moderation" element={<div className="p-6">Moderation (Coming Soon)</div>} />
-            <Route path="gamification" element={<div className="p-6">Gamification (Coming Soon)</div>} />
+            <Route path="moderation" element={<ModerationDashboard />} />
+            <Route path="gamification" element={<GamificationPage />} />
           </Route>
 
           {/* Fallback Route */}
