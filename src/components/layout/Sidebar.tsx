@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { 
   LayoutDashboard, Users, BookOpen, Newspaper, 
-  ShieldAlert, Award, LogOut, Flame 
+  ShieldAlert, Award, LogOut, Flame, FileText 
 } from 'lucide-react';
 import { useAuthStore, type AdminRole } from '../../store/authStore';
 
@@ -17,6 +17,8 @@ const navItems: NavItem[] = [
   { name: 'Dashboard', path: '/', icon: LayoutDashboard, allowedRoles: ['super_admin', 'content_manager', 'support_moderator', 'analytics_finance', 'content'] },
   { name: 'User Management', path: '/users', icon: Users, allowedRoles: ['super_admin', 'support_moderator', 'analytics_finance'] },
   { name: 'Curriculum & Content', path: '/content', icon: BookOpen, allowedRoles: ['super_admin', 'content_manager', 'content'] },
+  // ADDED: Link for the Study Material module
+  { name: 'Study Material', path: '/study', icon: FileText, allowedRoles: ['super_admin', 'content_manager', 'content'] },
   { name: 'Current Affairs', path: '/news', icon: Newspaper, allowedRoles: ['super_admin', 'content_manager', 'content'] },
   { name: 'Moderation Forum', path: '/moderation', icon: ShieldAlert, allowedRoles: ['super_admin', 'support_moderator'] },
   { name: 'Gamification', path: '/gamification', icon: Award, allowedRoles: ['super_admin', 'content_manager', 'content'] },
