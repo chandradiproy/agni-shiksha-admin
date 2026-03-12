@@ -17,4 +17,39 @@
     background-color: var(--color-background);
     color: var(--color-text-main);
   }
+
+  /* ==========================================
+     GLOBAL SCROLLBAR STYLING
+     ========================================== */
+     
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #d6d3d1 transparent;
+  }
+
+  /* Webkit Browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 8px;  /* Slim vertical scrollbar */
+    height: 8px; /* Slim horizontal scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6d3d1; /* Soft stone/gray default */
+    border-radius: 20px;
+    
+    /* Adds a transparent border to make the 8px scrollbar look even thinner (4px) */
+    border: 2px solid transparent; 
+    background-clip: content-box;
+  }
+
+  /* Brand integration: Turns Agni Orange when hovered/dragged */
+  ::-webkit-scrollbar-thumb:hover,
+  ::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-primary); 
+  }
 }

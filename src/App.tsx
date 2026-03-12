@@ -13,6 +13,9 @@ import { GamificationPage } from './features/gamification';
 import { AdminLayout } from './components/layout/AdminLayout';
 import { ToastContainer } from './components/ui/ToastContainer';
 import { useAuthStore } from './store/authStore';
+import { PlansPage } from './features/plans';
+import { FinancialPage } from './features/financial';
+import { AuditPage } from './features/audit';
 
 // Initialize the React Query Client
 const queryClient = new QueryClient({
@@ -57,6 +60,9 @@ const App: React.FC = () => {
             {/* Placeholders for future modules */}
             <Route path="moderation" element={<ModerationDashboard />} />
             <Route path="gamification" element={<GamificationPage />} />
+            <Route path="plans" element={<PlansPage />} />
+            <Route path="financial" element={<FinancialPage />} />
+            <Route path="audit" element={<AuditPage />} />
           </Route>
 
           {/* Fallback Route */}
