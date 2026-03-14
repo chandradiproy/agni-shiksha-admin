@@ -66,7 +66,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       {/* Main Sidebar Panel */}
       <aside 
         className={`
-          fixed md:static inset-y-0 left-0 z-50 
+          fixed md:static inset-y-0 left-0 z-40 
           w-64 bg-white border-r border-gray-200 
           flex flex-col h-full shrink-0
           transform transition-transform duration-300 ease-in-out

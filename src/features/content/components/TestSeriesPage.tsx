@@ -1,7 +1,7 @@
 // src/features/content/components/TestSeriesPage.tsx
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { ArrowLeft, Layers, Trash2, ChevronLeft } from 'lucide-react';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
@@ -12,12 +12,14 @@ import { TestSettingsTab } from './test-series/TestSettingsTab';
 import { BulkUploadTab } from './test-series/BulkUploadTab';
 import { QuestionListTab } from './test-series/QuestionListTab';
 import { useUIStore } from '../../../store/uiStore';
+import type { CreateTestSeriesPayload } from '../types';
 
 const MySwal = withReactContent(Swal);
 
 export const TestSeriesPage: React.FC = () => {
   const { examId } = useParams();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const addToast = useUIStore(state => state.addToast);
 
   const [selectedTsId, setSelectedTsId] = useState<string | null>(null);
@@ -33,6 +35,37 @@ export const TestSeriesPage: React.FC = () => {
   const testSeriesList = tsData?.data || [];
   const selectedTs = testSeriesList.find(t => t.id === selectedTsId);
   const showDetailView = selectedTsId || isCreating;
+
+  // --- Mutations ---
+  const createMutation = useMutation({
+    mutationFn: testSeriesService.create,
+    onSuccess: (res) => {
+      addToast('Test Series created successfully!', 'success');
+      queryClient.invalidateQueries({ queryKey: ['testSeries', examId] });
+      // Switch to the newly created test and open the questions tab
+      setSelectedTsId(res.testSeries.id);
+      setIsCreating(false);
+      setActiveTab('questions');
+    },
+    onError: (err: any) => addToast(err.response?.data?.error || 'Failed to create Test Series', 'error')
+  });
+
+  const updateMutation = useMutation({
+    mutationFn: ({ id, data }: { id: string; data: Partial<CreateTestSeriesPayload> }) => testSeriesService.update(id, data),
+    onSuccess: () => {
+      addToast('Test Series settings updated!', 'success');
+      queryClient.invalidateQueries({ queryKey: ['testSeries', examId] });
+    },
+    onError: (err: any) => addToast(err.response?.data?.error || 'Failed to update Test Series', 'error')
+  });
+
+  const handleSaveSettings = (data: CreateTestSeriesPayload) => {
+    if (isCreating) {
+      createMutation.mutate(data);
+    } else if (selectedTsId) {
+      updateMutation.mutate({ id: selectedTsId, data });
+    }
+  };
 
   const handleDeleteSeries = () => {
     if (!selectedTs) return;
@@ -112,7 +145,15 @@ export const TestSeriesPage: React.FC = () => {
               </div>
 
               {/* RENDER THE ACTIVE TAB */}
-              {(isCreating || activeTab === 'settings') && <TestSettingsTab selectedTs={selectedTs} isCreating={isCreating} examId={examId!} isPending={false} onSubmit={(d) => console.log('Handled in hook internal to tab for demo')} />}
+              {(isCreating || activeTab === 'settings') && (
+                <TestSettingsTab 
+                  selectedTs={selectedTs} 
+                  isCreating={isCreating} 
+                  examId={examId!} 
+                  isPending={createMutation.isPending || updateMutation.isPending} 
+                  onSubmit={handleSaveSettings} 
+                />
+              )}
               {!isCreating && activeTab === 'upload' && selectedTs && <BulkUploadTab selectedTs={selectedTs} />}
               {!isCreating && activeTab === 'questions' && selectedTs && <QuestionListTab selectedTs={selectedTs} />}
             </div>
