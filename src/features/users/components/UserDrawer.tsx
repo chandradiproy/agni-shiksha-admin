@@ -14,10 +14,11 @@ interface UserDrawerProps {
   onClose: () => void;
   onBan: (id: string, reason?: string) => void;
   onForumBan: (id: string) => void;
+  onRevokeSessions: (id: string) => void;
   isActionLoading: boolean;
 }
 
-export const UserDrawer: React.FC<UserDrawerProps> = ({ user, isOpen, onClose, onBan, onForumBan, isActionLoading }) => {
+export const UserDrawer: React.FC<UserDrawerProps> = ({ user, isOpen, onClose, onBan, onForumBan, onRevokeSessions, isActionLoading }) => {
   const [displayUser, setDisplayUser] = useState<User | null>(null);
   const [isConfirmingBan, setIsConfirmingBan] = useState(false);
   const [banReason, setBanReason] = useState('');
@@ -215,6 +216,14 @@ export const UserDrawer: React.FC<UserDrawerProps> = ({ user, isOpen, onClose, o
                   }`}
                 >
                   {displayUser.forum_banned ? 'Lift Forum Ban' : 'Issue Forum Ban (Silent)'}
+                </button>
+
+                <button
+                  onClick={() => onRevokeSessions(displayUser.id)}
+                  disabled={isActionLoading}
+                  className="w-full py-2.5 px-4 rounded-lg text-sm font-semibold transition-colors disabled:opacity-50 shadow-sm bg-purple-100 text-purple-700 hover:bg-purple-200 mt-3"
+                >
+                  <ShieldAlert className="w-4 h-4 mr-2 inline" /> Force Logout (Revoke Sessions)
                 </button>
 
                 {!displayUser.is_banned && isConfirmingBan ? (

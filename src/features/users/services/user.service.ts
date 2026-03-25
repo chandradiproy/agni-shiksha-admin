@@ -19,4 +19,9 @@ export const userService = {
     const response = await apiClient.put(`/users/${id}/forum-ban`);
     return response.data;
   },
+
+  revokeUserSessions: async (id: string) => {
+    const response = await apiClient.put(`/users/${id}/revoke-sessions`);
+    return response.data;
+  },
 };

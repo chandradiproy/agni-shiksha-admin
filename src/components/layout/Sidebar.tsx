@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { 
   LayoutDashboard, Users, BookOpen, Newspaper, 
   ShieldAlert, Award, LogOut, Flame, FileText,
-  Crown, PenTool, FileEdit, ShieldCheck, PieChart, CreditCard, Shield, X
+  Crown, PenTool, FileEdit, ShieldCheck, PieChart, CreditCard, Shield, X, Bell
 } from 'lucide-react';
 import { useAuthStore } from '../../store/authStore';
 import type { AdminRole } from '../../store/authStore';
@@ -22,6 +22,7 @@ const navItems: NavItem[] = [
   { name: 'Study Material', path: '/study', icon: FileText, allowedRoles: ['super_admin', 'content_manager', 'content'] },
   { name: 'Current Affairs', path: '/news', icon: Newspaper, allowedRoles: ['super_admin', 'content_manager', 'content'] },
   { name: 'Gamification', path: '/gamification', icon: Award, allowedRoles: ['super_admin', 'content_manager'] },
+  { name: 'Marketing & Alerts', path: '/notifications', icon: Bell, allowedRoles: ['super_admin'] },
   
   // SYSTEM MODULES
   { name: 'Subscription Plans', path: '/plans', icon: Crown, allowedRoles: ['super_admin'] },

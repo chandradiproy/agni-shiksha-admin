@@ -48,6 +48,17 @@ export const UserList: React.FC = () => {
     }
   });
 
+  const revokeSessionMutation = useMutation({
+    mutationFn: userService.revokeUserSessions,
+    onSuccess: (data: any) => {
+      addToast(data.message || 'All sessions revoked. User has been logged out globally.', 'success');
+      setSelectedUser(null);
+    },
+    onError: (error: any) => {
+      addToast(error.response?.data?.error || 'Failed to revoke user sessions.', 'error');
+    }
+  });
+
   return (
     <div className="space-y-6 flex flex-col h-full">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -175,7 +186,8 @@ export const UserList: React.FC = () => {
         onClose={() => setSelectedUser(null)} 
         onBan={(id, reason) => banMutation.mutate({ id, reason })}
         onForumBan={(id) => forumBanMutation.mutate(id)}
-        isActionLoading={banMutation.isPending || forumBanMutation.isPending}
+        onRevokeSessions={(id) => revokeSessionMutation.mutate(id)}
+        isActionLoading={banMutation.isPending || forumBanMutation.isPending || revokeSessionMutation.isPending}
       />
     </div>
   );

@@ -18,6 +18,7 @@ export interface User {
   is_active: boolean;
   is_banned: boolean;
   forum_banned: boolean; // Updated to match backend payload
+  ban_reason?: string;
   created_at: string;
   _count: {
     test_attempts: number;

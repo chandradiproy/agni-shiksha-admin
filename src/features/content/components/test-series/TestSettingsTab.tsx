@@ -64,7 +64,7 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
   const { register, handleSubmit, reset, watch, formState: { errors } } = useForm<TsFormInputs>({
     resolver: zodResolver(tsSchema),
     defaultValues: { 
-      type: 'free', test_type: 'full_mock', difficulty: 'medium', negative_marking: false, 
+      type: 'FREE', test_type: 'FULL_MOCK', difficulty: 'medium', negative_marking: false, 
       is_published: false, is_active: true, is_all_india: false, is_scheduled: false,
       total_questions: 100, duration_minutes: 60, total_marks: 200, max_attempts: 3, 
       show_solutions: true, show_solutions_after: 'immediate'
@@ -81,15 +81,15 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
         title: selectedTs.title,
         description: selectedTs.description,
         instructions: selectedTs.instructions,
-        type: selectedTs.type || 'free',
-        test_type: selectedTs.test_type || 'full_mock',
+        type: selectedTs.type || 'FREE',
+        test_type: selectedTs.test_type || 'FULL_MOCK',
         subject: selectedTs.subject || '',
         difficulty: selectedTs.difficulty || 'medium',
-        total_questions: selectedTs.total_questions,
-        duration_minutes: selectedTs.duration_minutes,
-        total_marks: selectedTs.total_marks,
+        total_questions: Number(selectedTs.total_questions) || 0,
+        duration_minutes: Number(selectedTs.duration_minutes) || 0,
+        total_marks: Number(selectedTs.total_marks) || 0,
         negative_marking: selectedTs.negative_marking,
-        negative_marks_per_wrong: selectedTs.negative_marks_per_wrong,
+        negative_marks_per_wrong: selectedTs.negative_marks_per_wrong !== null && selectedTs.negative_marks_per_wrong !== undefined ? Number(selectedTs.negative_marks_per_wrong) : null,
         is_all_india: selectedTs.is_all_india,
         is_scheduled: selectedTs.is_scheduled,
         scheduled_at: formatLocal(selectedTs.scheduled_at),
@@ -98,13 +98,13 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
         max_attempts: selectedTs.max_attempts || 3,
         show_solutions: selectedTs.show_solutions,
         show_solutions_after: selectedTs.show_solutions_after || 'immediate',
-        price_if_standalone: selectedTs.price_if_standalone,
+        price_if_standalone: selectedTs.price_if_standalone !== null && selectedTs.price_if_standalone !== undefined ? Number(selectedTs.price_if_standalone) : null,
         is_published: selectedTs.is_published,
         is_active: selectedTs.is_active
       });
     } else if (isCreating) {
       reset({ 
-        type: 'free', test_type: 'full_mock', difficulty: 'medium', negative_marking: false, 
+        type: 'FREE', test_type: 'FULL_MOCK', difficulty: 'medium', negative_marking: false, 
         is_published: false, is_active: true, is_all_india: false, is_scheduled: false,
         total_questions: 100, duration_minutes: 60, total_marks: 200, max_attempts: 3, 
         show_solutions: true, show_solutions_after: 'immediate', title: '', description: '', 
@@ -144,11 +144,21 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
     }
   };
 
+  const handleFormError = (errors: any) => {
+    console.log('Form Validation Errors:', errors);
+    const errorMessages = Object.keys(errors).map(key => `${key}: ${errors[key]?.message}`).join('\n');
+    MySwal.fire({
+      title: 'Validation Failed',
+      text: `Please correct the following fields:\n${errorMessages}`,
+      icon: 'error'
+    });
+  };
+
   // Safe number parser for empty strings
   const numberParser = { valueAsNumber: true, setValueAs: (v: any) => v === "" || isNaN(Number(v)) ? null : Number(v) };
 
   return (
-    <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-6 animate-in fade-in">
+    <form onSubmit={handleSubmit(handleFormSubmit, handleFormError)} className="space-y-6 animate-in fade-in">
       
       {/* --- Basic Information --- */}
       <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm space-y-5">
@@ -167,13 +177,13 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
             <div>
               <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-wide mb-1.5">Access Tier <span className="text-red-500">*</span></label>
               <select disabled={selectedTs?.is_published} {...register('type')} className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none bg-white text-sm disabled:bg-gray-50">
-                <option value="free">Free</option><option value="premium">Premium</option><option value="premium_plus">Premium Plus</option>
+                <option value="FREE">Free</option><option value="PREMIUM">Premium</option><option value="PREMIUM_PLUS">Premium Plus</option>
               </select>
             </div>
             <div>
               <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-wide mb-1.5">Test Type <span className="text-red-500">*</span></label>
               <select disabled={selectedTs?.is_published} {...register('test_type')} className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none bg-white text-sm disabled:bg-gray-50">
-                <option value="full_mock">Full Mock</option><option value="sectional">Sectional</option><option value="mini">Mini Mock</option><option value="pyq">PYQ</option><option value="ca">Current Affairs</option>
+                <option value="FULL_MOCK">Full Mock</option><option value="SECTIONAL">Sectional</option><option value="MINI_MOCK">Mini Mock</option><option value="PYQ">PYQ</option><option value="CURRENT_AFFAIRS">Current Affairs</option><option value="DAILY_QUIZ">Daily Quiz</option>
               </select>
             </div>
           </div>

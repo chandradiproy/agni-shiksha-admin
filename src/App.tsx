@@ -10,6 +10,7 @@ import { NewsPage } from './features/news'; // <--- Import NewsPage
 import { StudyPage } from './features/study'; // <--- Import StudyPage
 import { ModerationDashboard } from './features/moderation/components/ModerationDashboard';
 import { GamificationPage } from './features/gamification';
+import { NotificationsPage } from './features/notifications';
 import { AdminLayout } from './components/layout/AdminLayout';
 import { ToastContainer } from './components/ui/ToastContainer';
 import { useAuthStore } from './store/authStore';
@@ -58,6 +59,7 @@ const App: React.FC = () => {
             <Route path="news" element={<NewsPage />} />
             
             {/* Placeholders for future modules */}
+            <Route path="notifications" element={<NotificationsPage />} />
             <Route path="moderation" element={<ModerationDashboard />} />
             <Route path="gamification" element={<GamificationPage />} />
             <Route path="plans" element={<PlansPage />} />
