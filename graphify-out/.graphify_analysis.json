@@ -1,0 +1,440 @@
+{
+  "communities": {
+    "0": [
+      "addtaskmodal_handlesafesubmit",
+      "planspage_confirmdelete",
+      "planspage_onsubmit",
+      "src_features_content_components_test_series_testsettingstab_tsx",
+      "src_features_plans_components_planspage_tsx",
+      "src_features_study_components_addtaskmodal_tsx",
+      "testsettingstab_formatlocal",
+      "testsettingstab_handleformerror",
+      "testsettingstab_handleformsubmit",
+      "testsettingstab_toutc"
+    ],
+    "1": [
+      "bulkuploadtab_downloadtemplate",
+      "bulkuploadtab_handleeditrow",
+      "bulkuploadtab_handlefileupload",
+      "bulkuploadtab_handlefinaluploadtodb",
+      "bulkuploadtab_saveedit",
+      "src_features_content_components_test_series_bulkuploadtab_tsx"
+    ],
+    "2": [
+      "errorboundary_errorboundary",
+      "errorboundary_errorboundary_componentdidcatch",
+      "errorboundary_errorboundary_getderivedstatefromerror",
+      "errorboundary_errorboundary_render",
+      "src_components_guard_errorboundary_tsx"
+    ],
+    "3": [
+      "loginform_handleback",
+      "loginform_handleresendotp",
+      "loginform_onemailsubmit",
+      "loginform_onloginsubmit",
+      "src_features_auth_components_loginform_tsx"
+    ],
+    "4": [
+      "categorylist_handledelete",
+      "categorylist_handleopencreate",
+      "categorylist_handleopenedit",
+      "categorylist_handlesubmit",
+      "src_features_content_components_categorylist_tsx"
+    ],
+    "5": [
+      "examlist_handledelete",
+      "examlist_handleopencreate",
+      "examlist_handleopenedit",
+      "examlist_handlesubmit",
+      "src_features_content_components_examlist_tsx"
+    ],
+    "6": [
+      "newspage_handledelete",
+      "newspage_handletogglehide",
+      "newspage_handletogglepin",
+      "src_features_news_components_newspage_tsx"
+    ],
+    "7": [
+      "app_app",
+      "src_app_tsx",
+      "src_main_tsx"
+    ],
+    "8": [
+      "src_features_content_components_testseriespage_tsx",
+      "testseriespage_handledeleteseries",
+      "testseriespage_handlesavesettings"
+    ],
+    "9": [
+      "moderationdashboard_handledeletedoubt",
+      "moderationdashboard_handleupdatestatus",
+      "src_features_moderation_components_moderationdashboard_tsx"
+    ],
+    "10": [
+      "authorize_authorize",
+      "src_components_guard_authorize_tsx"
+    ],
+    "11": [
+      "adminlayout_adminlayout",
+      "src_components_layout_adminlayout_tsx"
+    ],
+    "12": [
+      "sidebar_getrolebadge",
+      "src_components_layout_sidebar_tsx"
+    ],
+    "13": [
+      "src_components_ui_toastcontainer_tsx",
+      "toastcontainer_geticon"
+    ],
+    "14": [
+      "categorymodal_categorymodal",
+      "src_features_content_components_categorymodal_tsx"
+    ],
+    "15": [
+      "exammodal_if",
+      "src_features_content_components_exammodal_tsx"
+    ],
+    "16": [
+      "questioneditmodal_onsubmit",
+      "src_features_content_components_test_series_questioneditmodal_tsx"
+    ],
+    "17": [
+      "questionlisttab_handledelete",
+      "src_features_content_components_test_series_questionlisttab_tsx"
+    ],
+    "18": [
+      "gamificationpage_confirmdelete",
+      "src_features_gamification_components_gamificationpage_tsx"
+    ],
+    "19": [
+      "doubtcard_handlecopyuserid",
+      "src_features_moderation_components_doubtcard_tsx"
+    ],
+    "20": [
+      "notificationspage_handlesubmit",
+      "src_features_notifications_components_notificationspage_tsx"
+    ],
+    "21": [
+      "src_features_study_components_studypage_tsx",
+      "studypage_confirmdelete"
+    ],
+    "22": [
+      "src_hooks_usedebounce_ts",
+      "usedebounce_usedebounce"
+    ],
+    "23": [
+      "eslint_config_js"
+    ],
+    "24": [
+      "vite_config_ts"
+    ],
+    "25": [
+      "src_create_folder_structure_py"
+    ],
+    "26": [
+      "src_features_audit_index_ts"
+    ],
+    "27": [
+      "src_features_audit_components_auditpage_tsx"
+    ],
+    "28": [
+      "src_features_audit_services_audit_service_ts"
+    ],
+    "29": [
+      "src_features_audit_types_index_ts"
+    ],
+    "30": [
+      "src_features_auth_index_ts"
+    ],
+    "31": [
+      "src_features_auth_services_auth_service_ts"
+    ],
+    "32": [
+      "src_features_content_index_ts"
+    ],
+    "33": [
+      "src_features_content_components_test_series_testseriessidebar_tsx"
+    ],
+    "34": [
+      "src_features_content_services_category_service_ts"
+    ],
+    "35": [
+      "src_features_content_services_exam_service_ts"
+    ],
+    "36": [
+      "src_features_content_services_question_service_ts"
+    ],
+    "37": [
+      "src_features_content_services_testseries_service_ts"
+    ],
+    "38": [
+      "src_features_content_types_index_ts"
+    ],
+    "39": [
+      "src_features_current_affairs_index_ts"
+    ],
+    "40": [
+      "src_features_dashboard_index_ts"
+    ],
+    "41": [
+      "src_features_dashboard_components_dashboard_tsx"
+    ],
+    "42": [
+      "src_features_dashboard_services_dashboard_service_ts"
+    ],
+    "43": [
+      "src_features_dashboard_types_index_ts"
+    ],
+    "44": [
+      "src_features_financial_index_ts"
+    ],
+    "45": [
+      "src_features_financial_components_financialpage_tsx"
+    ],
+    "46": [
+      "src_features_financial_services_financial_service_ts"
+    ],
+    "47": [
+      "src_features_financial_types_index_ts"
+    ],
+    "48": [
+      "src_features_gamification_index_ts"
+    ],
+    "49": [
+      "src_features_gamification_components_badgemodal_tsx"
+    ],
+    "50": [
+      "src_features_gamification_components_questmodal_tsx"
+    ],
+    "51": [
+      "src_features_gamification_services_gamification_service_ts"
+    ],
+    "52": [
+      "src_features_gamification_types_index_ts"
+    ],
+    "53": [
+      "src_features_moderation_index_ts"
+    ],
+    "54": [
+      "src_features_moderation_services_moderation_service_ts"
+    ],
+    "55": [
+      "src_features_moderation_types_index_ts"
+    ],
+    "56": [
+      "src_features_news_index_ts"
+    ],
+    "57": [
+      "src_features_news_components_articlecard_tsx"
+    ],
+    "58": [
+      "src_features_news_components_createarticlemodal_tsx"
+    ],
+    "59": [
+      "src_features_news_services_news_service_ts"
+    ],
+    "60": [
+      "src_features_news_types_index_ts"
+    ],
+    "61": [
+      "src_features_notifications_index_ts"
+    ],
+    "62": [
+      "src_features_notifications_types_ts"
+    ],
+    "63": [
+      "src_features_notifications_services_notification_service_ts"
+    ],
+    "64": [
+      "src_features_plans_index_ts"
+    ],
+    "65": [
+      "src_features_plans_services_plan_service_ts"
+    ],
+    "66": [
+      "src_features_plans_types_index_ts"
+    ],
+    "67": [
+      "src_features_study_index_ts"
+    ],
+    "68": [
+      "src_features_study_components_creatematerialmodal_tsx"
+    ],
+    "69": [
+      "src_features_study_components_createplanmodal_tsx"
+    ],
+    "70": [
+      "src_features_study_components_plantasksmodal_tsx"
+    ],
+    "71": [
+      "src_features_study_services_study_service_ts"
+    ],
+    "72": [
+      "src_features_study_types_index_ts"
+    ],
+    "73": [
+      "src_features_users_index_ts"
+    ],
+    "74": [
+      "src_features_users_components_userdrawer_tsx"
+    ],
+    "75": [
+      "src_features_users_components_userlist_tsx"
+    ],
+    "76": [
+      "src_features_users_services_user_service_ts"
+    ],
+    "77": [
+      "src_features_users_types_index_ts"
+    ],
+    "78": [
+      "src_lib_axios_ts"
+    ],
+    "79": [
+      "src_store_authstore_ts"
+    ],
+    "80": [
+      "src_store_uistore_ts"
+    ]
+  },
+  "cohesion": {
+    "0": 0.22,
+    "1": 0.33,
+    "2": 0.4,
+    "3": 0.4,
+    "4": 0.4,
+    "5": 0.4,
+    "6": 0.5,
+    "7": 0.67,
+    "8": 0.67,
+    "9": 0.67,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0
+  },
+  "gods": [
+    {
+      "id": "errorboundary_errorboundary",
+      "label": "ErrorBoundary",
+      "degree": 4
+    },
+    {
+      "id": "testsettingstab_handleformsubmit",
+      "label": "handleFormSubmit()",
+      "degree": 3
+    },
+    {
+      "id": "planspage_onsubmit",
+      "label": "onSubmit()",
+      "degree": 3
+    },
+    {
+      "id": "testsettingstab_toutc",
+      "label": "toUTC()",
+      "degree": 2
+    },
+    {
+      "id": "addtaskmodal_handlesafesubmit",
+      "label": "handleSafeSubmit()",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "handleFormSubmit()",
+      "target": "onSubmit()",
+      "source_files": [
+        "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+        "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\components\\PlansPage.tsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "handleSafeSubmit()",
+      "target": "onSubmit()",
+      "source_files": [
+        "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\AddTaskModal.tsx",
+        "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\components\\PlansPage.tsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `onSubmit()` (e.g. with `handleFormSubmit()` and `handleSafeSubmit()`) actually correct?",
+      "why": "`onSubmit()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    }
+  ]
+}

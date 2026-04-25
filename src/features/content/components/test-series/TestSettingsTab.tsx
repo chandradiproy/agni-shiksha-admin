@@ -3,10 +3,12 @@ import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import { useQuery } from '@tanstack/react-query';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { Settings, Layers, Play, Save, Loader2, CalendarClock, BookOpen, IndianRupee } from 'lucide-react';
 import type { TestSeries, CreateTestSeriesPayload } from '../../types';
+import { categoryService } from '../../services/category.service';
 
 const MySwal = withReactContent(Swal);
 
@@ -26,6 +28,7 @@ const toUTC = (local?: string | null) => {
 
 const tsSchema = z.object({
   title: z.string().min(3, 'Title is required'),
+  exam_category_id: z.string().optional().nullable(),
   description: z.string().optional().nullable(),
   instructions: z.string().optional().nullable(),
   type: z.string(),
@@ -67,9 +70,16 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
       type: 'FREE', test_type: 'FULL_MOCK', difficulty: 'medium', negative_marking: false, 
       is_published: false, is_active: true, is_all_india: false, is_scheduled: false,
       total_questions: 100, duration_minutes: 60, total_marks: 200, max_attempts: 3, 
-      show_solutions: true, show_solutions_after: 'immediate'
+      show_solutions: true, show_solutions_after: 'immediate', exam_category_id: ''
     }
   });
+
+  const { data: categoriesData } = useQuery({
+    queryKey: ['categories'],
+    queryFn: () => categoryService.getAll(),
+    staleTime: 60000,
+  });
+  const categories = categoriesData?.data || [];
 
   const watchNegativeMarking = watch('negative_marking');
   const watchIsScheduled = watch('is_scheduled');
@@ -79,6 +89,7 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
     if (selectedTs && !isCreating) {
       reset({
         title: selectedTs.title,
+        exam_category_id: selectedTs.exam_category_id || '',
         description: selectedTs.description,
         instructions: selectedTs.instructions,
         type: selectedTs.type || 'FREE',
@@ -107,7 +118,7 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
         type: 'FREE', test_type: 'FULL_MOCK', difficulty: 'medium', negative_marking: false, 
         is_published: false, is_active: true, is_all_india: false, is_scheduled: false,
         total_questions: 100, duration_minutes: 60, total_marks: 200, max_attempts: 3, 
-        show_solutions: true, show_solutions_after: 'immediate', title: '', description: '', 
+        show_solutions: true, show_solutions_after: 'immediate', title: '', exam_category_id: '', description: '', 
         instructions: '', subject: '', negative_marks_per_wrong: null, price_if_standalone: null,
         scheduled_at: '', available_from: formatLocal(new Date().toISOString()), available_until: ''
       });
@@ -118,6 +129,7 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
     const payload: CreateTestSeriesPayload = {
       ...data,
       exam_id: examId,
+      exam_category_id: data.exam_category_id || null, // Ensure empty string becomes null
       scheduled_at: toUTC(data.scheduled_at),
       available_from: toUTC(data.available_from),
       available_until: toUTC(data.available_until),
@@ -167,10 +179,23 @@ export const TestSettingsTab: React.FC<TestSettingsTabProps> = ({ selectedTs, is
         </h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div className="md:col-span-2">
+          <div className="md:col-span-1">
             <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-wide mb-1.5">Test Title <span className="text-red-500">*</span></label>
             <input disabled={selectedTs?.is_published} {...register('title')} className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-sm disabled:bg-gray-50" />
             {errors.title && <p className="text-red-500 text-xs mt-1">{errors.title.message}</p>}
+          </div>
+
+          <div className="md:col-span-1">
+            <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-wide mb-1.5 flex justify-between">
+              Master Category <span className="text-xs font-normal text-primary lowercase capitalize">Used for app filtering</span>
+            </label>
+            <select disabled={selectedTs?.is_published} {...register('exam_category_id')} className="w-full px-3.5 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none bg-white text-sm disabled:bg-gray-50">
+              <option value="">-- No Category --</option>
+              {categories.map((cat) => (
+                <option key={cat.id} value={cat.id}>{cat.name}</option>
+              ))}
+            </select>
+            {errors.exam_category_id && <p className="text-red-500 text-xs mt-1">{errors.exam_category_id.message}</p>}
           </div>
 
           <div className="grid grid-cols-2 gap-5 md:col-span-2">

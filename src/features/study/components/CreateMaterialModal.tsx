@@ -61,7 +61,7 @@ export const CreateMaterialModal: React.FC<Props> = ({ isOpen, onClose, onSubmit
               </div>
 
               <div className="p-6 overflow-y-auto">
-                <form id="material-form" onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                <form id="material-form" onSubmit={handleSubmit((data) => onSubmit(data as unknown as CreateMaterialPayload))} className="space-y-5">
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1.5">Target Exam <span className="text-red-500">*</span></label>

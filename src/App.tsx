@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { LoginForm } from './features/auth';
 import { Dashboard } from './features/dashboard/components/Dashboard';
 import { UsersPage } from './features/users';
-import { ContentPage } from './features/content'; 
+import { ContentPage, CategoryPage } from './features/content'; 
 import { TestSeriesPage } from './features/content/components/TestSeriesPage';
 import { NewsPage } from './features/news'; // <--- Import NewsPage
 import { StudyPage } from './features/study'; // <--- Import StudyPage
@@ -50,6 +50,7 @@ const App: React.FC = () => {
             
             {/* Content & Curriculum */}
             <Route path="content" element={<ContentPage />} />
+            <Route path="content/categories" element={<CategoryPage />} />
             <Route path="content/exams/:examId/test-series" element={<TestSeriesPage />} />
             
             {/* Study Module */}

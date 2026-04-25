@@ -26,7 +26,7 @@ export const NotificationsPage: React.FC = () => {
   // --- Queries ---
   const { data, isLoading, isError } = useQuery({
     queryKey: ['notifications', page],
-    queryFn: () => notificationService.getNotifications(page, 20),
+    queryFn: () => notificationService.getNotifications(page, 8),
     staleTime: 60000,
   });
 
@@ -67,9 +67,9 @@ export const NotificationsPage: React.FC = () => {
   };
 
   return (
-    <div className="space-y-6 flex flex-col h-full pb-6">
-      {/* Header Area */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+    <div className="flex flex-col h-full">
+      {/* Header Area — shrinks to fit */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 shrink-0 pb-4">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Push Notifications & Marketing</h1>
           <p className="text-sm text-gray-500 mt-1">Broadcast real-time mobile push alerts to students.</p>
@@ -87,8 +87,8 @@ export const NotificationsPage: React.FC = () => {
         </Authorize>
       </div>
 
-      {/* Grid Content */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 flex-1 flex flex-col overflow-hidden">
+      {/* Table Content — scrolls independently */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-100 flex-1 flex flex-col min-h-0 overflow-hidden">
         {isLoading ? (
           <div className="flex flex-col items-center justify-center h-64">
             <Loader2 className="w-8 h-8 animate-spin text-primary mb-2" />
@@ -105,9 +105,9 @@ export const NotificationsPage: React.FC = () => {
             <p className="text-gray-400 text-sm mt-1">Hit 'New Broadcast' to reach your students.</p>
           </div>
         ) : (
-          <div className="flex-1 overflow-x-auto">
+          <div className="flex-1 overflow-y-auto">
             <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
+              <thead className="bg-gray-50 sticky top-0 z-10">
                 <tr>
                   <th className="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Message</th>
                   <th className="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Type</th>
@@ -148,11 +148,11 @@ export const NotificationsPage: React.FC = () => {
         )}
       </div>
 
-      {/* Pagination Footer */}
-      {data && data.pagination && data.pagination.totalPages > 1 && (
-        <div className="bg-white px-6 py-3 border border-gray-200 rounded-xl flex items-center justify-between shadow-sm">
+      {/* Sticky Pagination Footer — always visible at bottom */}
+      {data && data.pagination && (
+        <div className="shrink-0 bg-white px-6 py-3 mt-3 border border-gray-200 rounded-xl flex items-center justify-between shadow-sm">
           <span className="text-sm text-gray-500 font-medium">
-            Page {data.pagination.page} of {data.pagination.totalPages}
+            Page {data.pagination.page} of {data.pagination.totalPages} ({data.pagination.total} total)
           </span>
           <div className="flex gap-2">
             <button

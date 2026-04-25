@@ -5,7 +5,9 @@ import { useForm, useFieldArray } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { X, Loader2, BookOpen, ChevronRight, ChevronLeft, Plus, Trash2, LayoutList, Eye, CheckCircle2 } from 'lucide-react';
+import { useQuery } from '@tanstack/react-query';
 import type { CreateExamPayload, Exam } from '../types';
+import { categoryService } from '../services/category.service';
 
 // --- Zod Schemas ---
 const sectionSchema = z.object({
@@ -117,6 +119,13 @@ export const ExamModal: React.FC<ExamModalProps> = ({ isOpen, onClose, onSubmit,
   const { fields: stagesFields, append: appendStage, remove: removeStage } = useFieldArray({ control, name: "exam_pattern.selection_stages" });
   const { fields: tierFields, append: appendTier, remove: removeTier } = useFieldArray({ control, name: "exam_pattern.tier_details" });
 
+  const { data: categoriesData } = useQuery({
+    queryKey: ['categories'],
+    queryFn: () => categoryService.getAll(),
+    staleTime: 60000,
+  });
+  const categories = categoriesData?.data || [];
+
   useEffect(() => {
     if (isOpen) {
       setStep(1);
@@ -224,7 +233,12 @@ export const ExamModal: React.FC<ExamModalProps> = ({ isOpen, onClose, onSubmit,
                      <div className="grid grid-cols-2 gap-4">
                        <div>
                          <label className="block text-sm font-semibold text-gray-700 mb-1">Category <span className="text-red-500">*</span></label>
-                         <input {...register('category')} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-sm" placeholder="e.g., SSC" />
+                         <select {...register('category')} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-sm bg-white">
+                            <option value="">-- Select Master Category --</option>
+                            {categories.map((cat) => (
+                              <option key={cat.id} value={cat.name}>{cat.name}</option>
+                            ))}
+                         </select>
                          {errors.category && <p className="text-red-500 text-xs mt-1">{errors.category.message}</p>}
                        </div>
                        <div>

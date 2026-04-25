@@ -1,5 +1,25 @@
 // src/features/content/types/index.ts
 
+export interface ExamCategory {
+  id: string;
+  name: string;
+  slug: string;
+  icon_url: string | null;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+  _count?: {
+    test_series: number;
+  };
+}
+
+export interface CreateCategoryPayload {
+  name: string;
+  slug: string;
+  icon_url?: string | null;
+  is_active: boolean;
+}
+
 export interface Exam {
   id: string;
   name: string;
@@ -43,6 +63,7 @@ export interface CreateExamPayload {
 export interface TestSeries {
   id: string;
   exam_id: string;
+  exam_category_id?: string | null;
   title: string;
   description?: string | null;
   type: string;
@@ -72,6 +93,7 @@ export interface TestSeries {
 
 export interface CreateTestSeriesPayload {
   exam_id: string;
+  exam_category_id?: string | null;
   title: string;
   description?: string | null;
   instructions?: string | null;

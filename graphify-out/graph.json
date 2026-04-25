@@ -1,0 +1,1843 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config_js",
+      "community": 23,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\vite.config.ts",
+      "source_location": "L1",
+      "id": "vite_config_ts",
+      "community": 24,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\App.tsx",
+      "source_location": "L1",
+      "id": "src_app_tsx",
+      "community": 7,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\App.tsx",
+      "source_location": "L31",
+      "id": "app_app",
+      "community": 7,
+      "norm_label": "app()"
+    },
+    {
+      "label": "create_folder_structure.py",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\create_folder_structure.py",
+      "source_location": "L1",
+      "id": "src_create_folder_structure_py",
+      "community": 25,
+      "norm_label": "create_folder_structure.py"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\main.tsx",
+      "source_location": "L1",
+      "id": "src_main_tsx",
+      "community": 7,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "Authorize.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\Authorize.tsx",
+      "source_location": "L1",
+      "id": "src_components_guard_authorize_tsx",
+      "community": 10,
+      "norm_label": "authorize.tsx"
+    },
+    {
+      "label": "Authorize()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\Authorize.tsx",
+      "source_location": "L16",
+      "id": "authorize_authorize",
+      "community": 10,
+      "norm_label": "authorize()"
+    },
+    {
+      "label": "ErrorBoundary.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L1",
+      "id": "src_components_guard_errorboundary_tsx",
+      "community": 2,
+      "norm_label": "errorboundary.tsx"
+    },
+    {
+      "label": "ErrorBoundary",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L13",
+      "id": "errorboundary_errorboundary",
+      "community": 2,
+      "norm_label": "errorboundary"
+    },
+    {
+      "label": ".getDerivedStateFromError()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L19",
+      "id": "errorboundary_errorboundary_getderivedstatefromerror",
+      "community": 2,
+      "norm_label": ".getderivedstatefromerror()"
+    },
+    {
+      "label": ".componentDidCatch()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L23",
+      "id": "errorboundary_errorboundary_componentdidcatch",
+      "community": 2,
+      "norm_label": ".componentdidcatch()"
+    },
+    {
+      "label": ".render()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L27",
+      "id": "errorboundary_errorboundary_render",
+      "community": 2,
+      "norm_label": ".render()"
+    },
+    {
+      "label": "AdminLayout.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\layout\\AdminLayout.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_adminlayout_tsx",
+      "community": 11,
+      "norm_label": "adminlayout.tsx"
+    },
+    {
+      "label": "AdminLayout()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\layout\\AdminLayout.tsx",
+      "source_location": "L9",
+      "id": "adminlayout_adminlayout",
+      "community": 11,
+      "norm_label": "adminlayout()"
+    },
+    {
+      "label": "Sidebar.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\layout\\Sidebar.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_sidebar_tsx",
+      "community": 12,
+      "norm_label": "sidebar.tsx"
+    },
+    {
+      "label": "getRoleBadge()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\layout\\Sidebar.tsx",
+      "source_location": "L42",
+      "id": "sidebar_getrolebadge",
+      "community": 12,
+      "norm_label": "getrolebadge()"
+    },
+    {
+      "label": "ToastContainer.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\ui\\ToastContainer.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_toastcontainer_tsx",
+      "community": 13,
+      "norm_label": "toastcontainer.tsx"
+    },
+    {
+      "label": "getIcon()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\ui\\ToastContainer.tsx",
+      "source_location": "L5",
+      "id": "toastcontainer_geticon",
+      "community": 13,
+      "norm_label": "geticon()"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\audit\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_audit_index_ts",
+      "community": 26,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "AuditPage.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\audit\\components\\AuditPage.tsx",
+      "source_location": "L1",
+      "id": "src_features_audit_components_auditpage_tsx",
+      "community": 27,
+      "norm_label": "auditpage.tsx"
+    },
+    {
+      "label": "audit.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\audit\\services\\audit.service.ts",
+      "source_location": "L1",
+      "id": "src_features_audit_services_audit_service_ts",
+      "community": 28,
+      "norm_label": "audit.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\audit\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_audit_types_index_ts",
+      "community": 29,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_auth_index_ts",
+      "community": 30,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "LoginForm.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L1",
+      "id": "src_features_auth_components_loginform_tsx",
+      "community": 3,
+      "norm_label": "loginform.tsx"
+    },
+    {
+      "label": "onEmailSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L59",
+      "id": "loginform_onemailsubmit",
+      "community": 3,
+      "norm_label": "onemailsubmit()"
+    },
+    {
+      "label": "onLoginSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L72",
+      "id": "loginform_onloginsubmit",
+      "community": 3,
+      "norm_label": "onloginsubmit()"
+    },
+    {
+      "label": "handleResendOtp()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L89",
+      "id": "loginform_handleresendotp",
+      "community": 3,
+      "norm_label": "handleresendotp()"
+    },
+    {
+      "label": "handleBack()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L104",
+      "id": "loginform_handleback",
+      "community": 3,
+      "norm_label": "handleback()"
+    },
+    {
+      "label": "auth.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\services\\auth.service.ts",
+      "source_location": "L1",
+      "id": "src_features_auth_services_auth_service_ts",
+      "community": 31,
+      "norm_label": "auth.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_content_index_ts",
+      "community": 32,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "CategoryList.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_categorylist_tsx",
+      "community": 4,
+      "norm_label": "categorylist.tsx"
+    },
+    {
+      "label": "handleOpenCreate()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L63",
+      "id": "categorylist_handleopencreate",
+      "community": 4,
+      "norm_label": "handleopencreate()"
+    },
+    {
+      "label": "handleOpenEdit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L68",
+      "id": "categorylist_handleopenedit",
+      "community": 4,
+      "norm_label": "handleopenedit()"
+    },
+    {
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L73",
+      "id": "categorylist_handlesubmit",
+      "community": 4,
+      "norm_label": "handlesubmit()"
+    },
+    {
+      "label": "handleDelete()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L81",
+      "id": "categorylist_handledelete",
+      "community": 4,
+      "norm_label": "handledelete()"
+    },
+    {
+      "label": "CategoryModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_categorymodal_tsx",
+      "community": 14,
+      "norm_label": "categorymodal.tsx"
+    },
+    {
+      "label": "CategoryModal()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryModal.tsx",
+      "source_location": "L25",
+      "id": "categorymodal_categorymodal",
+      "community": 14,
+      "norm_label": "categorymodal()"
+    },
+    {
+      "label": "ExamList.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_examlist_tsx",
+      "community": 5,
+      "norm_label": "examlist.tsx"
+    },
+    {
+      "label": "handleOpenCreate()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L78",
+      "id": "examlist_handleopencreate",
+      "community": 5,
+      "norm_label": "handleopencreate()"
+    },
+    {
+      "label": "handleOpenEdit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L83",
+      "id": "examlist_handleopenedit",
+      "community": 5,
+      "norm_label": "handleopenedit()"
+    },
+    {
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L88",
+      "id": "examlist_handlesubmit",
+      "community": 5,
+      "norm_label": "handlesubmit()"
+    },
+    {
+      "label": "handleDelete()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L96",
+      "id": "examlist_handledelete",
+      "community": 5,
+      "norm_label": "handledelete()"
+    },
+    {
+      "label": "ExamModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_exammodal_tsx",
+      "community": 15,
+      "norm_label": "exammodal.tsx"
+    },
+    {
+      "label": "if()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamModal.tsx",
+      "source_location": "L182",
+      "id": "exammodal_if",
+      "community": 15,
+      "norm_label": "if()"
+    },
+    {
+      "label": "TestSeriesPage.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\TestSeriesPage.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_testseriespage_tsx",
+      "community": 8,
+      "norm_label": "testseriespage.tsx"
+    },
+    {
+      "label": "handleSaveSettings()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\TestSeriesPage.tsx",
+      "source_location": "L62",
+      "id": "testseriespage_handlesavesettings",
+      "community": 8,
+      "norm_label": "handlesavesettings()"
+    },
+    {
+      "label": "handleDeleteSeries()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\TestSeriesPage.tsx",
+      "source_location": "L70",
+      "id": "testseriespage_handledeleteseries",
+      "community": 8,
+      "norm_label": "handledeleteseries()"
+    },
+    {
+      "label": "BulkUploadTab.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "community": 1,
+      "norm_label": "bulkuploadtab.tsx"
+    },
+    {
+      "label": "handleFileUpload()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L44",
+      "id": "bulkuploadtab_handlefileupload",
+      "community": 1,
+      "norm_label": "handlefileupload()"
+    },
+    {
+      "label": "handleFinalUploadToDB()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L50",
+      "id": "bulkuploadtab_handlefinaluploadtodb",
+      "community": 1,
+      "norm_label": "handlefinaluploadtodb()"
+    },
+    {
+      "label": "downloadTemplate()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L60",
+      "id": "bulkuploadtab_downloadtemplate",
+      "community": 1,
+      "norm_label": "downloadtemplate()"
+    },
+    {
+      "label": "handleEditRow()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L74",
+      "id": "bulkuploadtab_handleeditrow",
+      "community": 1,
+      "norm_label": "handleeditrow()"
+    },
+    {
+      "label": "saveEdit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L79",
+      "id": "bulkuploadtab_saveedit",
+      "community": 1,
+      "norm_label": "saveedit()"
+    },
+    {
+      "label": "QuestionEditModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\QuestionEditModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_test_series_questioneditmodal_tsx",
+      "community": 16,
+      "norm_label": "questioneditmodal.tsx"
+    },
+    {
+      "label": "onSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\QuestionEditModal.tsx",
+      "source_location": "L73",
+      "id": "questioneditmodal_onsubmit",
+      "community": 16,
+      "norm_label": "onsubmit()"
+    },
+    {
+      "label": "QuestionListTab.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\QuestionListTab.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_test_series_questionlisttab_tsx",
+      "community": 17,
+      "norm_label": "questionlisttab.tsx"
+    },
+    {
+      "label": "handleDelete()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\QuestionListTab.tsx",
+      "source_location": "L34",
+      "id": "questionlisttab_handledelete",
+      "community": 17,
+      "norm_label": "handledelete()"
+    },
+    {
+      "label": "TestSeriesSidebar.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSeriesSidebar.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_test_series_testseriessidebar_tsx",
+      "community": 33,
+      "norm_label": "testseriessidebar.tsx"
+    },
+    {
+      "label": "TestSettingsTab.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L1",
+      "id": "src_features_content_components_test_series_testsettingstab_tsx",
+      "community": 0,
+      "norm_label": "testsettingstab.tsx"
+    },
+    {
+      "label": "formatLocal()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L16",
+      "id": "testsettingstab_formatlocal",
+      "community": 0,
+      "norm_label": "formatlocal()"
+    },
+    {
+      "label": "toUTC()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L24",
+      "id": "testsettingstab_toutc",
+      "community": 0,
+      "norm_label": "toutc()"
+    },
+    {
+      "label": "handleFormSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L128",
+      "id": "testsettingstab_handleformsubmit",
+      "community": 0,
+      "norm_label": "handleformsubmit()"
+    },
+    {
+      "label": "handleFormError()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L159",
+      "id": "testsettingstab_handleformerror",
+      "community": 0,
+      "norm_label": "handleformerror()"
+    },
+    {
+      "label": "category.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\services\\category.service.ts",
+      "source_location": "L1",
+      "id": "src_features_content_services_category_service_ts",
+      "community": 34,
+      "norm_label": "category.service.ts"
+    },
+    {
+      "label": "exam.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\services\\exam.service.ts",
+      "source_location": "L1",
+      "id": "src_features_content_services_exam_service_ts",
+      "community": 35,
+      "norm_label": "exam.service.ts"
+    },
+    {
+      "label": "question.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\services\\question.service.ts",
+      "source_location": "L1",
+      "id": "src_features_content_services_question_service_ts",
+      "community": 36,
+      "norm_label": "question.service.ts"
+    },
+    {
+      "label": "testSeries.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\services\\testSeries.service.ts",
+      "source_location": "L1",
+      "id": "src_features_content_services_testseries_service_ts",
+      "community": 37,
+      "norm_label": "testseries.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_content_types_index_ts",
+      "community": 38,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\current-affairs\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_current_affairs_index_ts",
+      "community": 39,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\dashboard\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_dashboard_index_ts",
+      "community": 40,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "Dashboard.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\dashboard\\components\\Dashboard.tsx",
+      "source_location": "L1",
+      "id": "src_features_dashboard_components_dashboard_tsx",
+      "community": 41,
+      "norm_label": "dashboard.tsx"
+    },
+    {
+      "label": "dashboard.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\dashboard\\services\\dashboard.service.ts",
+      "source_location": "L1",
+      "id": "src_features_dashboard_services_dashboard_service_ts",
+      "community": 42,
+      "norm_label": "dashboard.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\dashboard\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_dashboard_types_index_ts",
+      "community": 43,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\financial\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_financial_index_ts",
+      "community": 44,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "FinancialPage.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\financial\\components\\FinancialPage.tsx",
+      "source_location": "L1",
+      "id": "src_features_financial_components_financialpage_tsx",
+      "community": 45,
+      "norm_label": "financialpage.tsx"
+    },
+    {
+      "label": "financial.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\financial\\services\\financial.service.ts",
+      "source_location": "L1",
+      "id": "src_features_financial_services_financial_service_ts",
+      "community": 46,
+      "norm_label": "financial.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\financial\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_financial_types_index_ts",
+      "community": 47,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\gamification\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_gamification_index_ts",
+      "community": 48,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "BadgeModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\gamification\\components\\BadgeModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_gamification_components_badgemodal_tsx",
+      "community": 49,
+      "norm_label": "badgemodal.tsx"
+    },
+    {
+      "label": "GamificationPage.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\gamification\\components\\GamificationPage.tsx",
+      "source_location": "L1",
+      "id": "src_features_gamification_components_gamificationpage_tsx",
+      "community": 18,
+      "norm_label": "gamificationpage.tsx"
+    },
+    {
+      "label": "confirmDelete()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\gamification\\components\\GamificationPage.tsx",
+      "source_location": "L79",
+      "id": "gamificationpage_confirmdelete",
+      "community": 18,
+      "norm_label": "confirmdelete()"
+    },
+    {
+      "label": "QuestModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\gamification\\components\\QuestModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_gamification_components_questmodal_tsx",
+      "community": 50,
+      "norm_label": "questmodal.tsx"
+    },
+    {
+      "label": "gamification.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\gamification\\services\\gamification.service.ts",
+      "source_location": "L1",
+      "id": "src_features_gamification_services_gamification_service_ts",
+      "community": 51,
+      "norm_label": "gamification.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\gamification\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_gamification_types_index_ts",
+      "community": 52,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_moderation_index_ts",
+      "community": 53,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "DoubtCard.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\components\\DoubtCard.tsx",
+      "source_location": "L1",
+      "id": "src_features_moderation_components_doubtcard_tsx",
+      "community": 19,
+      "norm_label": "doubtcard.tsx"
+    },
+    {
+      "label": "handleCopyUserId()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\components\\DoubtCard.tsx",
+      "source_location": "L16",
+      "id": "doubtcard_handlecopyuserid",
+      "community": 19,
+      "norm_label": "handlecopyuserid()"
+    },
+    {
+      "label": "ModerationDashboard.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\components\\ModerationDashboard.tsx",
+      "source_location": "L1",
+      "id": "src_features_moderation_components_moderationdashboard_tsx",
+      "community": 9,
+      "norm_label": "moderationdashboard.tsx"
+    },
+    {
+      "label": "handleUpdateStatus()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\components\\ModerationDashboard.tsx",
+      "source_location": "L50",
+      "id": "moderationdashboard_handleupdatestatus",
+      "community": 9,
+      "norm_label": "handleupdatestatus()"
+    },
+    {
+      "label": "handleDeleteDoubt()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\components\\ModerationDashboard.tsx",
+      "source_location": "L54",
+      "id": "moderationdashboard_handledeletedoubt",
+      "community": 9,
+      "norm_label": "handledeletedoubt()"
+    },
+    {
+      "label": "moderation.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\services\\moderation.service.ts",
+      "source_location": "L1",
+      "id": "src_features_moderation_services_moderation_service_ts",
+      "community": 54,
+      "norm_label": "moderation.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_moderation_types_index_ts",
+      "community": 55,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_news_index_ts",
+      "community": 56,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "ArticleCard.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\ArticleCard.tsx",
+      "source_location": "L1",
+      "id": "src_features_news_components_articlecard_tsx",
+      "community": 57,
+      "norm_label": "articlecard.tsx"
+    },
+    {
+      "label": "CreateArticleModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\CreateArticleModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_news_components_createarticlemodal_tsx",
+      "community": 58,
+      "norm_label": "createarticlemodal.tsx"
+    },
+    {
+      "label": "NewsPage.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\NewsPage.tsx",
+      "source_location": "L1",
+      "id": "src_features_news_components_newspage_tsx",
+      "community": 6,
+      "norm_label": "newspage.tsx"
+    },
+    {
+      "label": "handleToggleHide()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\NewsPage.tsx",
+      "source_location": "L69",
+      "id": "newspage_handletogglehide",
+      "community": 6,
+      "norm_label": "handletogglehide()"
+    },
+    {
+      "label": "handleTogglePin()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\NewsPage.tsx",
+      "source_location": "L73",
+      "id": "newspage_handletogglepin",
+      "community": 6,
+      "norm_label": "handletogglepin()"
+    },
+    {
+      "label": "handleDelete()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\NewsPage.tsx",
+      "source_location": "L77",
+      "id": "newspage_handledelete",
+      "community": 6,
+      "norm_label": "handledelete()"
+    },
+    {
+      "label": "news.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\services\\news.service.ts",
+      "source_location": "L1",
+      "id": "src_features_news_services_news_service_ts",
+      "community": 59,
+      "norm_label": "news.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_news_types_index_ts",
+      "community": 60,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\notifications\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_notifications_index_ts",
+      "community": 61,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "types.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\notifications\\types.ts",
+      "source_location": "L1",
+      "id": "src_features_notifications_types_ts",
+      "community": 62,
+      "norm_label": "types.ts"
+    },
+    {
+      "label": "NotificationsPage.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\notifications\\components\\NotificationsPage.tsx",
+      "source_location": "L1",
+      "id": "src_features_notifications_components_notificationspage_tsx",
+      "community": 20,
+      "norm_label": "notificationspage.tsx"
+    },
+    {
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\notifications\\components\\NotificationsPage.tsx",
+      "source_location": "L46",
+      "id": "notificationspage_handlesubmit",
+      "community": 20,
+      "norm_label": "handlesubmit()"
+    },
+    {
+      "label": "notification.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\notifications\\services\\notification.service.ts",
+      "source_location": "L1",
+      "id": "src_features_notifications_services_notification_service_ts",
+      "community": 63,
+      "norm_label": "notification.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_plans_index_ts",
+      "community": 64,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "PlansPage.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\components\\PlansPage.tsx",
+      "source_location": "L1",
+      "id": "src_features_plans_components_planspage_tsx",
+      "community": 0,
+      "norm_label": "planspage.tsx"
+    },
+    {
+      "label": "onSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\components\\PlansPage.tsx",
+      "source_location": "L75",
+      "id": "planspage_onsubmit",
+      "community": 0,
+      "norm_label": "onsubmit()"
+    },
+    {
+      "label": "confirmDelete()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\components\\PlansPage.tsx",
+      "source_location": "L88",
+      "id": "planspage_confirmdelete",
+      "community": 0,
+      "norm_label": "confirmdelete()"
+    },
+    {
+      "label": "plan.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\services\\plan.service.ts",
+      "source_location": "L1",
+      "id": "src_features_plans_services_plan_service_ts",
+      "community": 65,
+      "norm_label": "plan.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_plans_types_index_ts",
+      "community": 66,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_study_index_ts",
+      "community": 67,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "AddTaskModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\AddTaskModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_study_components_addtaskmodal_tsx",
+      "community": 0,
+      "norm_label": "addtaskmodal.tsx"
+    },
+    {
+      "label": "handleSafeSubmit()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\AddTaskModal.tsx",
+      "source_location": "L48",
+      "id": "addtaskmodal_handlesafesubmit",
+      "community": 0,
+      "norm_label": "handlesafesubmit()"
+    },
+    {
+      "label": "CreateMaterialModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\CreateMaterialModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_study_components_creatematerialmodal_tsx",
+      "community": 68,
+      "norm_label": "creatematerialmodal.tsx"
+    },
+    {
+      "label": "CreatePlanModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\CreatePlanModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_study_components_createplanmodal_tsx",
+      "community": 69,
+      "norm_label": "createplanmodal.tsx"
+    },
+    {
+      "label": "PlanTasksModal.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\PlanTasksModal.tsx",
+      "source_location": "L1",
+      "id": "src_features_study_components_plantasksmodal_tsx",
+      "community": 70,
+      "norm_label": "plantasksmodal.tsx"
+    },
+    {
+      "label": "StudyPage.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\StudyPage.tsx",
+      "source_location": "L1",
+      "id": "src_features_study_components_studypage_tsx",
+      "community": 21,
+      "norm_label": "studypage.tsx"
+    },
+    {
+      "label": "confirmDelete()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\StudyPage.tsx",
+      "source_location": "L106",
+      "id": "studypage_confirmdelete",
+      "community": 21,
+      "norm_label": "confirmdelete()"
+    },
+    {
+      "label": "study.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\services\\study.service.ts",
+      "source_location": "L1",
+      "id": "src_features_study_services_study_service_ts",
+      "community": 71,
+      "norm_label": "study.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_study_types_index_ts",
+      "community": 72,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\users\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_users_index_ts",
+      "community": 73,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "UserDrawer.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\users\\components\\UserDrawer.tsx",
+      "source_location": "L1",
+      "id": "src_features_users_components_userdrawer_tsx",
+      "community": 74,
+      "norm_label": "userdrawer.tsx"
+    },
+    {
+      "label": "UserList.tsx",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\users\\components\\UserList.tsx",
+      "source_location": "L1",
+      "id": "src_features_users_components_userlist_tsx",
+      "community": 75,
+      "norm_label": "userlist.tsx"
+    },
+    {
+      "label": "user.service.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\users\\services\\user.service.ts",
+      "source_location": "L1",
+      "id": "src_features_users_services_user_service_ts",
+      "community": 76,
+      "norm_label": "user.service.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\users\\types\\index.ts",
+      "source_location": "L1",
+      "id": "src_features_users_types_index_ts",
+      "community": 77,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "useDebounce.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\hooks\\useDebounce.ts",
+      "source_location": "L1",
+      "id": "src_hooks_usedebounce_ts",
+      "community": 22,
+      "norm_label": "usedebounce.ts"
+    },
+    {
+      "label": "useDebounce()",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\hooks\\useDebounce.ts",
+      "source_location": "L4",
+      "id": "usedebounce_usedebounce",
+      "community": 22,
+      "norm_label": "usedebounce()"
+    },
+    {
+      "label": "axios.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\lib\\axios.ts",
+      "source_location": "L1",
+      "id": "src_lib_axios_ts",
+      "community": 78,
+      "norm_label": "axios.ts"
+    },
+    {
+      "label": "authStore.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\store\\authStore.ts",
+      "source_location": "L1",
+      "id": "src_store_authstore_ts",
+      "community": 79,
+      "norm_label": "authstore.ts"
+    },
+    {
+      "label": "uiStore.ts",
+      "file_type": "code",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\store\\uiStore.ts",
+      "source_location": "L1",
+      "id": "src_store_uistore_ts",
+      "community": 80,
+      "norm_label": "uistore.ts"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\App.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_src": "src_app_tsx",
+      "_tgt": "app_app",
+      "source": "src_app_tsx",
+      "target": "app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "src_main_tsx",
+      "_tgt": "src_app_tsx",
+      "source": "src_app_tsx",
+      "target": "src_main_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\Authorize.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "src_components_guard_authorize_tsx",
+      "_tgt": "authorize_authorize",
+      "source": "src_components_guard_authorize_tsx",
+      "target": "authorize_authorize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "src_components_guard_errorboundary_tsx",
+      "_tgt": "errorboundary_errorboundary",
+      "source": "src_components_guard_errorboundary_tsx",
+      "target": "errorboundary_errorboundary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "errorboundary_errorboundary",
+      "_tgt": "errorboundary_errorboundary_getderivedstatefromerror",
+      "source": "errorboundary_errorboundary",
+      "target": "errorboundary_errorboundary_getderivedstatefromerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "errorboundary_errorboundary",
+      "_tgt": "errorboundary_errorboundary_componentdidcatch",
+      "source": "errorboundary_errorboundary",
+      "target": "errorboundary_errorboundary_componentdidcatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\guard\\ErrorBoundary.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_src": "errorboundary_errorboundary",
+      "_tgt": "errorboundary_errorboundary_render",
+      "source": "errorboundary_errorboundary",
+      "target": "errorboundary_errorboundary_render",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\layout\\AdminLayout.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "src_components_layout_adminlayout_tsx",
+      "_tgt": "adminlayout_adminlayout",
+      "source": "src_components_layout_adminlayout_tsx",
+      "target": "adminlayout_adminlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\layout\\Sidebar.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_src": "src_components_layout_sidebar_tsx",
+      "_tgt": "sidebar_getrolebadge",
+      "source": "src_components_layout_sidebar_tsx",
+      "target": "sidebar_getrolebadge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\components\\ui\\ToastContainer.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "src_components_ui_toastcontainer_tsx",
+      "_tgt": "toastcontainer_geticon",
+      "source": "src_components_ui_toastcontainer_tsx",
+      "target": "toastcontainer_geticon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_src": "src_features_auth_components_loginform_tsx",
+      "_tgt": "loginform_onemailsubmit",
+      "source": "src_features_auth_components_loginform_tsx",
+      "target": "loginform_onemailsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_src": "src_features_auth_components_loginform_tsx",
+      "_tgt": "loginform_onloginsubmit",
+      "source": "src_features_auth_components_loginform_tsx",
+      "target": "loginform_onloginsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_src": "src_features_auth_components_loginform_tsx",
+      "_tgt": "loginform_handleresendotp",
+      "source": "src_features_auth_components_loginform_tsx",
+      "target": "loginform_handleresendotp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\auth\\components\\LoginForm.tsx",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_src": "src_features_auth_components_loginform_tsx",
+      "_tgt": "loginform_handleback",
+      "source": "src_features_auth_components_loginform_tsx",
+      "target": "loginform_handleback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_src": "src_features_content_components_categorylist_tsx",
+      "_tgt": "categorylist_handleopencreate",
+      "source": "src_features_content_components_categorylist_tsx",
+      "target": "categorylist_handleopencreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_src": "src_features_content_components_categorylist_tsx",
+      "_tgt": "categorylist_handleopenedit",
+      "source": "src_features_content_components_categorylist_tsx",
+      "target": "categorylist_handleopenedit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_src": "src_features_content_components_categorylist_tsx",
+      "_tgt": "categorylist_handlesubmit",
+      "source": "src_features_content_components_categorylist_tsx",
+      "target": "categorylist_handlesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryList.tsx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "src_features_content_components_categorylist_tsx",
+      "_tgt": "categorylist_handledelete",
+      "source": "src_features_content_components_categorylist_tsx",
+      "target": "categorylist_handledelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\CategoryModal.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_src": "src_features_content_components_categorymodal_tsx",
+      "_tgt": "categorymodal_categorymodal",
+      "source": "src_features_content_components_categorymodal_tsx",
+      "target": "categorymodal_categorymodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_src": "src_features_content_components_examlist_tsx",
+      "_tgt": "examlist_handleopencreate",
+      "source": "src_features_content_components_examlist_tsx",
+      "target": "examlist_handleopencreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_src": "src_features_content_components_examlist_tsx",
+      "_tgt": "examlist_handleopenedit",
+      "source": "src_features_content_components_examlist_tsx",
+      "target": "examlist_handleopenedit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_src": "src_features_content_components_examlist_tsx",
+      "_tgt": "examlist_handlesubmit",
+      "source": "src_features_content_components_examlist_tsx",
+      "target": "examlist_handlesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamList.tsx",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_src": "src_features_content_components_examlist_tsx",
+      "_tgt": "examlist_handledelete",
+      "source": "src_features_content_components_examlist_tsx",
+      "target": "examlist_handledelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\ExamModal.tsx",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_src": "src_features_content_components_exammodal_tsx",
+      "_tgt": "exammodal_if",
+      "source": "src_features_content_components_exammodal_tsx",
+      "target": "exammodal_if",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\TestSeriesPage.tsx",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_src": "src_features_content_components_testseriespage_tsx",
+      "_tgt": "testseriespage_handlesavesettings",
+      "source": "src_features_content_components_testseriespage_tsx",
+      "target": "testseriespage_handlesavesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\TestSeriesPage.tsx",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_src": "src_features_content_components_testseriespage_tsx",
+      "_tgt": "testseriespage_handledeleteseries",
+      "source": "src_features_content_components_testseriespage_tsx",
+      "target": "testseriespage_handledeleteseries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "_tgt": "bulkuploadtab_handlefileupload",
+      "source": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "target": "bulkuploadtab_handlefileupload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "_tgt": "bulkuploadtab_handlefinaluploadtodb",
+      "source": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "target": "bulkuploadtab_handlefinaluploadtodb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "_tgt": "bulkuploadtab_downloadtemplate",
+      "source": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "target": "bulkuploadtab_downloadtemplate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "_tgt": "bulkuploadtab_handleeditrow",
+      "source": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "target": "bulkuploadtab_handleeditrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\BulkUploadTab.tsx",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "_tgt": "bulkuploadtab_saveedit",
+      "source": "src_features_content_components_test_series_bulkuploadtab_tsx",
+      "target": "bulkuploadtab_saveedit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\QuestionEditModal.tsx",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_questioneditmodal_tsx",
+      "_tgt": "questioneditmodal_onsubmit",
+      "source": "src_features_content_components_test_series_questioneditmodal_tsx",
+      "target": "questioneditmodal_onsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\QuestionListTab.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_questionlisttab_tsx",
+      "_tgt": "questionlisttab_handledelete",
+      "source": "src_features_content_components_test_series_questionlisttab_tsx",
+      "target": "questionlisttab_handledelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_testsettingstab_tsx",
+      "_tgt": "testsettingstab_formatlocal",
+      "source": "src_features_content_components_test_series_testsettingstab_tsx",
+      "target": "testsettingstab_formatlocal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_testsettingstab_tsx",
+      "_tgt": "testsettingstab_toutc",
+      "source": "src_features_content_components_test_series_testsettingstab_tsx",
+      "target": "testsettingstab_toutc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_testsettingstab_tsx",
+      "_tgt": "testsettingstab_handleformsubmit",
+      "source": "src_features_content_components_test_series_testsettingstab_tsx",
+      "target": "testsettingstab_handleformsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_src": "src_features_content_components_test_series_testsettingstab_tsx",
+      "_tgt": "testsettingstab_handleformerror",
+      "source": "src_features_content_components_test_series_testsettingstab_tsx",
+      "target": "testsettingstab_handleformerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_src": "testsettingstab_handleformsubmit",
+      "_tgt": "testsettingstab_toutc",
+      "source": "testsettingstab_toutc",
+      "target": "testsettingstab_handleformsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\content\\components\\test-series\\TestSettingsTab.tsx",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_src": "testsettingstab_handleformsubmit",
+      "_tgt": "planspage_onsubmit",
+      "source": "testsettingstab_handleformsubmit",
+      "target": "planspage_onsubmit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\gamification\\components\\GamificationPage.tsx",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_src": "src_features_gamification_components_gamificationpage_tsx",
+      "_tgt": "gamificationpage_confirmdelete",
+      "source": "src_features_gamification_components_gamificationpage_tsx",
+      "target": "gamificationpage_confirmdelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\components\\DoubtCard.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "src_features_moderation_components_doubtcard_tsx",
+      "_tgt": "doubtcard_handlecopyuserid",
+      "source": "src_features_moderation_components_doubtcard_tsx",
+      "target": "doubtcard_handlecopyuserid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\components\\ModerationDashboard.tsx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_src": "src_features_moderation_components_moderationdashboard_tsx",
+      "_tgt": "moderationdashboard_handleupdatestatus",
+      "source": "src_features_moderation_components_moderationdashboard_tsx",
+      "target": "moderationdashboard_handleupdatestatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\moderation\\components\\ModerationDashboard.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_src": "src_features_moderation_components_moderationdashboard_tsx",
+      "_tgt": "moderationdashboard_handledeletedoubt",
+      "source": "src_features_moderation_components_moderationdashboard_tsx",
+      "target": "moderationdashboard_handledeletedoubt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\NewsPage.tsx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_src": "src_features_news_components_newspage_tsx",
+      "_tgt": "newspage_handletogglehide",
+      "source": "src_features_news_components_newspage_tsx",
+      "target": "newspage_handletogglehide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\NewsPage.tsx",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_src": "src_features_news_components_newspage_tsx",
+      "_tgt": "newspage_handletogglepin",
+      "source": "src_features_news_components_newspage_tsx",
+      "target": "newspage_handletogglepin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\news\\components\\NewsPage.tsx",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_src": "src_features_news_components_newspage_tsx",
+      "_tgt": "newspage_handledelete",
+      "source": "src_features_news_components_newspage_tsx",
+      "target": "newspage_handledelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\notifications\\components\\NotificationsPage.tsx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_src": "src_features_notifications_components_notificationspage_tsx",
+      "_tgt": "notificationspage_handlesubmit",
+      "source": "src_features_notifications_components_notificationspage_tsx",
+      "target": "notificationspage_handlesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\components\\PlansPage.tsx",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_src": "src_features_plans_components_planspage_tsx",
+      "_tgt": "planspage_onsubmit",
+      "source": "src_features_plans_components_planspage_tsx",
+      "target": "planspage_onsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\plans\\components\\PlansPage.tsx",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_src": "src_features_plans_components_planspage_tsx",
+      "_tgt": "planspage_confirmdelete",
+      "source": "src_features_plans_components_planspage_tsx",
+      "target": "planspage_confirmdelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\AddTaskModal.tsx",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_src": "addtaskmodal_handlesafesubmit",
+      "_tgt": "planspage_onsubmit",
+      "source": "planspage_onsubmit",
+      "target": "addtaskmodal_handlesafesubmit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\AddTaskModal.tsx",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "src_features_study_components_addtaskmodal_tsx",
+      "_tgt": "addtaskmodal_handlesafesubmit",
+      "source": "src_features_study_components_addtaskmodal_tsx",
+      "target": "addtaskmodal_handlesafesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\features\\study\\components\\StudyPage.tsx",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_src": "src_features_study_components_studypage_tsx",
+      "_tgt": "studypage_confirmdelete",
+      "source": "src_features_study_components_studypage_tsx",
+      "target": "studypage_confirmdelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "F:\\AgniShiksha\\agni-shiksha-admin\\src\\hooks\\useDebounce.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "src_hooks_usedebounce_ts",
+      "_tgt": "usedebounce_usedebounce",
+      "source": "src_hooks_usedebounce_ts",
+      "target": "usedebounce_usedebounce",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
