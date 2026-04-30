@@ -1,7 +1,8 @@
-# Graph Report - F:\AgniShiksha\agni-shiksha-admin  (2026-04-25)
+# Graph Report - agni-shiksha-admin  (2026-04-27)
 
 ## Corpus Check
-- Corpus is ~31,213 words - fits in a single context window. You may not need a graph.
+- 84 files · ~31,289 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 133 nodes · 53 edges · 2 communities detected
@@ -21,9 +22,9 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `handleFormSubmit()` --calls--> `onSubmit()`  [INFERRED]
-  F:\AgniShiksha\agni-shiksha-admin\src\features\content\components\test-series\TestSettingsTab.tsx → F:\AgniShiksha\agni-shiksha-admin\src\features\plans\components\PlansPage.tsx
-- `handleSafeSubmit()` --calls--> `onSubmit()`  [INFERRED]
-  F:\AgniShiksha\agni-shiksha-admin\src\features\study\components\AddTaskModal.tsx → F:\AgniShiksha\agni-shiksha-admin\src\features\plans\components\PlansPage.tsx
+  src\features\content\components\test-series\TestSettingsTab.tsx → src\features\plans\components\PlansPage.tsx
+- `onSubmit()` --calls--> `handleSafeSubmit()`  [INFERRED]
+  src\features\plans\components\PlansPage.tsx → src\features\study\components\AddTaskModal.tsx
 
 ## Communities
 

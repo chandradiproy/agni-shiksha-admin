@@ -32,6 +32,7 @@ export interface Exam {
   display_order: number;
   subjects: string[];
   exam_pattern: Record<string, any>;
+  approximate_exam_date: string | null;
   created_at: string;
   updated_at: string;
 }
@@ -57,6 +58,7 @@ export interface CreateExamPayload {
   is_active: boolean;
   subjects: string[];
   exam_pattern: Record<string, any>;
+  approximate_exam_date?: string | null;
 }
 
 // --- UPDATED TEST SERIES TYPES ---

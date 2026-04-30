@@ -51,6 +51,7 @@ const examSchema = z.object({
   display_order: z.number().int().min(1, 'Order must be 1 or higher'),
   thumbnail_url: z.string().url('Must be a valid URL').optional().or(z.literal('')),
   is_active: z.boolean(),
+  approximate_exam_date: z.string().optional().or(z.literal('')),
   subjects: z.array(z.object({ value: z.string().min(1, "Subject cannot be empty") })),
   exam_pattern: examPatternSchema,
 });
@@ -134,6 +135,7 @@ export const ExamModal: React.FC<ExamModalProps> = ({ isOpen, onClose, onSubmit,
           name: initialData.name, slug: initialData.slug, category: initialData.category, conducting_body: initialData.conducting_body,
           description: initialData.description || '', display_order: initialData.display_order, thumbnail_url: initialData.thumbnail_url || '',
           is_active: initialData.is_active,
+          approximate_exam_date: initialData.approximate_exam_date ? initialData.approximate_exam_date.substring(0, 10) : '',
           subjects: initialData.subjects?.length ? initialData.subjects.map(s => ({ value: s })) : [{ value: '' }],
           exam_pattern: {
             exam_mode: initialData.exam_pattern?.exam_mode || '',
@@ -144,6 +146,7 @@ export const ExamModal: React.FC<ExamModalProps> = ({ isOpen, onClose, onSubmit,
       } else {
         reset({ 
           name: '', slug: '', category: '', conducting_body: '', description: '', thumbnail_url: '', is_active: true, display_order: 1,
+          approximate_exam_date: '',
           subjects: [{ value: '' }],
           exam_pattern: { exam_mode: 'Computer Based Test (CBT)', selection_stages: [{ value: 'Tier-I (Prelims)' }], tier_details: [] }
         });
@@ -153,7 +156,7 @@ export const ExamModal: React.FC<ExamModalProps> = ({ isOpen, onClose, onSubmit,
 
   const handleNext = async () => {
     let fieldsToValidate: any = [];
-    if (step === 1) fieldsToValidate = ['name', 'slug', 'category', 'conducting_body', 'display_order', 'thumbnail_url'];
+    if (step === 1) fieldsToValidate = ['name', 'slug', 'category', 'conducting_body', 'display_order', 'thumbnail_url', 'approximate_exam_date'];
     if (step === 2) fieldsToValidate = ['description', 'subjects'];
     if (step === 3) fieldsToValidate = ['exam_pattern'];
 
@@ -166,6 +169,7 @@ export const ExamModal: React.FC<ExamModalProps> = ({ isOpen, onClose, onSubmit,
       name: formData.name, slug: formData.slug, category: formData.category, conducting_body: formData.conducting_body,
       description: formData.description, thumbnail_url: formData.thumbnail_url || undefined, display_order: formData.display_order,
       is_active: formData.is_active,
+      approximate_exam_date: formData.approximate_exam_date || null,
       subjects: formData.subjects.map(s => s.value),
       exam_pattern: {
         exam_mode: formData.exam_pattern.exam_mode,
@@ -249,7 +253,11 @@ export const ExamModal: React.FC<ExamModalProps> = ({ isOpen, onClose, onSubmit,
                      </div>
 
                      <div className="grid grid-cols-3 gap-4">
-                       <div className="col-span-2">
+                       <div>
+                         <label className="block text-sm font-semibold text-gray-700 mb-1">Approx. Exam Date</label>
+                         <input type="date" {...register('approximate_exam_date')} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-sm" />
+                       </div>
+                       <div>
                          <label className="block text-sm font-semibold text-gray-700 mb-1">Thumbnail URL</label>
                          <input {...register('thumbnail_url')} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-sm" placeholder="https://cdn.agnishiksha.com/..." />
                          {errors.thumbnail_url && <p className="text-red-500 text-xs mt-1">{errors.thumbnail_url.message}</p>}
@@ -403,6 +411,13 @@ export const ExamModal: React.FC<ExamModalProps> = ({ isOpen, onClose, onSubmit,
                             <span className="block text-xs font-bold text-gray-400 uppercase tracking-wide">URL Slug</span>
                             <div className="text-sm text-primary font-mono bg-primary-light/30 inline-block px-2 py-0.5 rounded mt-1">/{formData.slug}</div>
                           </div>
+
+                          {formData.approximate_exam_date && (
+                            <div>
+                              <span className="block text-xs font-bold text-gray-400 uppercase tracking-wide">Approx. Exam Date</span>
+                              <div className="text-sm text-gray-900 mt-1 font-medium">{new Date(formData.approximate_exam_date).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                            </div>
+                          )}
 
                           <div>
                             <span className="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Subjects</span>
