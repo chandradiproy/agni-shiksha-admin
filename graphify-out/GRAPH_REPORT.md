@@ -1,7 +1,7 @@
-# Graph Report - agni-shiksha-admin  (2026-04-27)
+# Graph Report - agni-shiksha-admin  (2026-05-02)
 
 ## Corpus Check
-- 84 files · ~31,289 words
+- 84 files · ~31,485 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary

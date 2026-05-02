@@ -59,6 +59,18 @@ export const UserList: React.FC = () => {
     }
   });
 
+  const hardDeleteMutation = useMutation({
+    mutationFn: userService.hardDeleteUser,
+    onSuccess: (data: any) => {
+      addToast(data.message || 'User permanently deleted.', 'success');
+      queryClient.invalidateQueries({ queryKey: ['users'] });
+      setSelectedUser(null);
+    },
+    onError: (error: any) => {
+      addToast(error.response?.data?.error || 'Failed to permanently delete user.', 'error');
+    }
+  });
+
   return (
     <div className="space-y-6 flex flex-col h-full">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -187,7 +199,8 @@ export const UserList: React.FC = () => {
         onBan={(id, reason) => banMutation.mutate({ id, reason })}
         onForumBan={(id) => forumBanMutation.mutate(id)}
         onRevokeSessions={(id) => revokeSessionMutation.mutate(id)}
-        isActionLoading={banMutation.isPending || forumBanMutation.isPending || revokeSessionMutation.isPending}
+        onHardDelete={(id) => hardDeleteMutation.mutate(id)}
+        isActionLoading={banMutation.isPending || forumBanMutation.isPending || revokeSessionMutation.isPending || hardDeleteMutation.isPending}
       />
     </div>
   );

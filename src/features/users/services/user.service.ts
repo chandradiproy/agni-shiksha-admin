@@ -24,4 +24,9 @@ export const userService = {
     const response = await apiClient.put(`/users/${id}/revoke-sessions`);
     return response.data;
   },
+
+  hardDeleteUser: async (id: string) => {
+    const response = await apiClient.delete(`/users/${id}/hard-delete`);
+    return response.data;
+  },
 };

@@ -15,12 +15,14 @@ interface UserDrawerProps {
   onBan: (id: string, reason?: string) => void;
   onForumBan: (id: string) => void;
   onRevokeSessions: (id: string) => void;
+  onHardDelete?: (id: string) => void;
   isActionLoading: boolean;
 }
 
-export const UserDrawer: React.FC<UserDrawerProps> = ({ user, isOpen, onClose, onBan, onForumBan, onRevokeSessions, isActionLoading }) => {
+export const UserDrawer: React.FC<UserDrawerProps> = ({ user, isOpen, onClose, onBan, onForumBan, onRevokeSessions, onHardDelete, isActionLoading }) => {
   const [displayUser, setDisplayUser] = useState<User | null>(null);
   const [isConfirmingBan, setIsConfirmingBan] = useState(false);
+  const [isConfirmingDelete, setIsConfirmingDelete] = useState(false);
   const [banReason, setBanReason] = useState('');
 
   useEffect(() => {
@@ -30,6 +32,7 @@ export const UserDrawer: React.FC<UserDrawerProps> = ({ user, isOpen, onClose, o
 
     if (!isOpen) {
       setIsConfirmingBan(false);
+      setIsConfirmingDelete(false);
       setBanReason('');
     }
   }, [isOpen, user]);
@@ -277,6 +280,47 @@ export const UserDrawer: React.FC<UserDrawerProps> = ({ user, isOpen, onClose, o
 
                 )}
 
+              </div>
+            </Authorize>
+
+            <Authorize allowedRoles={['super_admin']}>
+              <div className="p-6 border-t border-red-100 bg-red-50/30 space-y-3">
+                <h4 className="text-sm font-semibold text-red-900 mb-2">Danger Zone</h4>
+                
+                {isConfirmingDelete ? (
+                  <div className="space-y-3 p-4 bg-white rounded-xl border border-red-200 transition-all">
+                    <p className="text-xs text-gray-700">
+                      Are you absolutely sure? This will <strong className="text-red-600">permanently delete</strong> the user and all associated data. This action cannot be undone.
+                    </p>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => setIsConfirmingDelete(false)}
+                        disabled={isActionLoading}
+                        className="flex-1 py-2 bg-white text-gray-700 border border-gray-300 rounded-lg text-xs font-semibold hover:bg-gray-50 transition-colors"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        disabled={isActionLoading}
+                        onClick={() => {
+                          if (onHardDelete) onHardDelete(displayUser.id);
+                          setIsConfirmingDelete(false);
+                        }}
+                        className="flex-1 py-2 bg-red-700 text-white rounded-lg text-xs font-semibold hover:bg-red-800 transition-colors disabled:opacity-50"
+                      >
+                        Yes, Delete
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => setIsConfirmingDelete(true)}
+                    disabled={isActionLoading}
+                    className="w-full py-2.5 px-4 rounded-lg text-sm font-semibold transition-colors disabled:opacity-50 shadow-sm bg-red-100 text-red-800 hover:bg-red-200 border border-red-200"
+                  >
+                    Permanently Delete Account
+                  </button>
+                )}
               </div>
             </Authorize>
 
